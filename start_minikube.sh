@@ -20,7 +20,7 @@ if [ -z "$INSIDE_LUXOFT" ]; then
 else
 	echo $INSIDE_LUXOFT
 	
-	cpfw-login_amd64 --user rarmeanu
+	cpfw-login_amd64 --user $1
 
 	CERTIFICATE=/usr/local/share/ca-certificates/luxoft/luxoft_root_ca.crt
 		if [ -f CERTIFICATE]; then
